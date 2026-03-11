@@ -9,11 +9,11 @@ export function HeroSection() {
       {/* Background gradient */}
       <HeroBackground />
 
-      {/* Main hero wrapper — constrained to 1440 */}
+      {/* Main hero wrapper */}
       <div className="relative mx-auto max-w-[1440px]">
-        {/* ========== PLAYER IMAGE (behind content, full bleed) ========== */}
+        {/* ========== PLAYER IMAGE ========== */}
         <div className="pointer-events-none relative z-[5] flex justify-center lg:absolute lg:inset-x-0 lg:top-[140px]">
-          <div className="relative mt-[100px] h-[400px] w-[350px] sm:h-[500px] sm:w-[400px] md:h-[600px] md:w-[500px] lg:mx-auto lg:mt-0 lg:ml-[calc(54.17%-488px)] lg:h-[804px] lg:w-[977px]">
+          <div className="relative mt-[100px] h-[450px] w-[400px] sm:h-[500px] sm:w-[400px] md:size-[600px] lg:mx-auto lg:mt-0 lg:ml-[calc(54.17%-488px)] lg:h-[804px] lg:w-[977px]">
             <Image
               src={heroConfig.playerImage}
               alt="Basketball player"
@@ -91,7 +91,7 @@ export function HeroSection() {
 
         {/* ========== DOMINANT TYPOGRAPHY ========== */}
         <div className="relative -z-0 -mt-[20px] sm:-mt-[40px] lg:mt-0 flex max-w-[1440px] items-center justify-center w-full">
-          <h1 className="bg-[url('/images/dominant-bg.png')] font-bebas text-[50px] sm:text-[100px] md:text-[150px] lg:text-[200px] xl:text-[250px] 2xl:text-[350px] bg-center bg-clip-text text-transparent inline-block leading-[0.85] tracking-wider font-black bg-size-[180%] bg-opacity-30">
+          <h1 className="bg-[url('/images/dominant-bg.png')] font-bebas text-[50px] sm:text-[100px] md:text-[150px] lg:text-[200px] xl:text-[300px] 2xl:text-[350px] bg-center bg-clip-text text-transparent inline-block leading-[0.85] tracking-wider font-black bg-size-[180%] bg-opacity-30">
             DOMINANT
           </h1>
         </div>

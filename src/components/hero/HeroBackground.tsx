@@ -8,7 +8,7 @@ export function HeroBackground() {
         src="/images/header-gradient.png"
         alt=""
         fill
-        className="object-cover object-top"
+        className="object-cover lg:object-contain object-top opacity-30 lg:opacity-50"
         priority
       />
     </div>
