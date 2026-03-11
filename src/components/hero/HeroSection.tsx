@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { heroConfig } from "@/config/hero";
 import { HeroBackground } from "./HeroBackground";
+import { TextBottomBorderIcon } from "../custom-icons";
 
 export function HeroSection() {
   return (
@@ -26,7 +27,7 @@ export function HeroSection() {
         {/* ========== HERO HEADING (top-left, over player) ========== */}
         <div className="relative z-10 px-6 pt-[100px] md:px-10 lg:px-[160px] lg:pt-[170px]">
           <h1
-            className="font-bebas text-[28px] italic leading-[1.1] sm:text-[32px] md:text-[36px]"
+            className="font-bebas text-[28px] leading-[1.1] sm:text-[32px] md:text-[36px]"
             style={{
               backgroundImage: "var(--gradient-metallic)",
               WebkitBackgroundClip: "text",
@@ -41,7 +42,8 @@ export function HeroSection() {
           </h1>
 
           {/* Decorative orange-to-transparent line */}
-          <div className="mt-4 h-[3px] w-[203px] bg-linear-to-r from-white to-transparent" />
+          {/* <div className="mt-4 h-[3px] w-[203px] bg-linear-to-r from-white to-transparent" /> */}
+          <TextBottomBorderIcon />
         </div>
 
         {/* ========== THUMBNAIL IMAGES (right side, desktop) ========== */}

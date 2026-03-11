@@ -1,0 +1,1 @@
+export { TextBottomBorderIcon } from './text-bottom-border';
