@@ -14,6 +14,7 @@ export function HeroSection() {
 
         {/* ========== HERO HEADING (top-left, over player) ========== */}
         <div className="relative z-10 px-6 pt-[100px] md:px-10 lg:px-[160px] lg:pt-[170px]">
+
           <h1
             className="font-bebas text-[28px] text-center lg:text-start leading-normal sm:text-[32px] md:text-[36px]"
           >
