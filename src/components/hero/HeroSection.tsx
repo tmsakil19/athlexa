@@ -55,7 +55,7 @@ export function HeroSection() {
           {/* Main thumbnail */}
           <div className="h-[128px] w-[152px] overflow-hidden rounded-xl bg-white">
             <Image
-              src={heroConfig.playerImage}
+              src={heroConfig.playerImage3}
               alt="Player thumbnail"
               width={171}
               height={227}
@@ -65,7 +65,7 @@ export function HeroSection() {
           {/* Faded partial thumbnail */}
           <div className="relative h-[128px] w-[59px] overflow-hidden rounded-xl bg-white">
             <Image
-              src={heroConfig.playerImage}
+              src={heroConfig.playerImage4}
               alt="Player thumbnail"
               width={163}
               height={200}

@@ -3,6 +3,8 @@ export interface HeroConfig {
   headingLine2: string;
   description: string;
   playerImage: string;
+  playerImage3: string;
+  playerImage4: string;
   backgroundImage: string;
 }
 
