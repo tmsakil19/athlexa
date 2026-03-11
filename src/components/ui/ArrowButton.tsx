@@ -17,15 +17,25 @@ export function ArrowButton({
     <button
       onClick={onClick}
       aria-label={direction === "left" ? "Previous" : "Next"}
-      className={`flex size-14 items-center justify-center rounded-full border-2 transition-colors ${isActive
-          ? "border-white bg-brand-primary"
-          : "border-[rgba(255,255,255,0.15)] bg-[rgba(220,102,30,0.15)]"
-        }`}
+      className="flex size-14 relative items-center justify-center rounded-full overflow-visible"
     >
+      {/* Crescent that peeks out behind the main circle */}
+      <div
+        className={`absolute inset-0 rounded-full ${isActive
+          ? "bg-white -translate-x-[2px]"
+          : "bg-[#4b3c33] translate-x-[2px]"
+          }`}
+      />
+      {/* Main circle background */}
+      <div
+        className={`absolute inset-0 rounded-full ${isActive ? "bg-brand-primary" : "bg-[#DC661E26]"
+          }`}
+      />
+
       {direction === "left" ? (
-        <ChevronLeft className="size-7 text-white" />
+        <ChevronLeft className="relative z-10 size-7 text-white" />
       ) : (
-        <ChevronRight className="size-7 text-white" />
+        <ChevronRight className="relative z-10 size-7 text-white" />
       )}
     </button>
   );
