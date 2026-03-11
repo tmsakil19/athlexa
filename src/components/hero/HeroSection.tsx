@@ -11,24 +11,11 @@ export function HeroSection() {
 
       {/* Main hero wrapper */}
       <div className="relative mx-auto max-w-[1440px]">
-        {/* ========== PLAYER IMAGE ========== */}
-        <div className="pointer-events-none relative z-[5] flex justify-center lg:absolute lg:inset-x-0 lg:top-[140px]">
-          <div className="relative mt-[100px] h-[450px] w-[400px] sm:h-[500px] sm:w-[400px] md:size-[600px] lg:mx-auto lg:mt-0 lg:ml-[calc(54.17%-488px)] lg:h-[804px] lg:w-[977px]">
-            <Image
-              src={heroConfig.playerImage}
-              alt="Basketball player"
-              fill
-              className="object-contain object-bottom"
-              priority
-            />
-          </div>
-        </div>
 
         {/* ========== HERO HEADING (top-left, over player) ========== */}
         <div className="relative z-10 px-6 pt-[100px] md:px-10 lg:px-[160px] lg:pt-[170px]">
-
           <h1
-            className="font-bebas text-[28px] leading-normal sm:text-[32px] md:text-[36px]"
+            className="font-bebas text-[28px] text-center lg:text-start leading-normal sm:text-[32px] md:text-[36px]"
           >
             <span className="block" style={{
               backgroundImage: "var(--gradient-metallic)",
@@ -47,7 +34,20 @@ export function HeroSection() {
               {heroConfig.headingLine2}
             </span>
           </h1>
-          <TextBottomBorderIcon />
+          <TextBottomBorderIcon className="mx-auto lg:mx-0" />
+        </div>
+
+        {/* ========== PLAYER IMAGE ========== */}
+        <div className="pointer-events-none relative z-[5] flex justify-center lg:absolute lg:inset-x-0 lg:top-[140px]">
+          <div className="relative h-[400px] w-[400px] md:size-[600px] lg:mx-auto lg:mt-0 lg:ml-[calc(54.17%-488px)] lg:h-[804px] lg:w-[977px]">
+            <Image
+              src={heroConfig.playerImage}
+              alt="Basketball player"
+              fill
+              className="object-contain object-bottom"
+              priority
+            />
+          </div>
         </div>
 
         {/* ========== THUMBNAIL IMAGES (right side, desktop) ========== */}
@@ -98,7 +98,7 @@ export function HeroSection() {
 
         {/* ========== MOBILE DESCRIPTION ========== */}
         <div className="px-6 pt-6 md:px-10 lg:hidden">
-          <p className="font-inter text-[14px] leading-[22px] text-white opacity-80 sm:text-[16px] sm:leading-6">
+          <p className="font-inter text-center text-[14px] leading-[22px] text-white opacity-80 sm:text-[16px] sm:leading-6">
             Professional coaching programs designed — to unlock your full
             athletic potential no matter your level.
           </p>

@@ -41,7 +41,7 @@ export function Navbar() {
       {/* CTA Button */}
       <a
         href={navigationConfig.ctaHref}
-        className="flex items-center gap-4 rounded-full bg-brand-dark py-1 pr-1 pl-6"
+        className="flex items-center gap-4 rounded-full bg-brand-dark py-1 pr-1 pl-1 md:pl-6"
       >
 
         <span className="hidden font-manrope text-[18px] font-semibold leading-[27px] text-white md:block">
