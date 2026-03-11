@@ -1,7 +1,7 @@
 "use client";
 
 import { navigationConfig } from "@/config/navigation";
-import { X, ArrowUpLeft } from "lucide-react";
+import { X, ArrowUpRight } from "lucide-react";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -14,8 +14,8 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       className={`fixed inset-0 z-[100] flex flex-col bg-brand-black transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
         }`}
     >
-      <div className="flex items-center justify-between px-6 py-8">
-        <span className="font-bebas text-[40px] leading-none text-white">
+      <div className="flex items-center justify-between px-6 py-6">
+        <span className="font-bebas text-[32px] leading-none text-white">
           {navigationConfig.logo}
         </span>
         <button
@@ -41,10 +41,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <a
           href={navigationConfig.ctaHref}
           onClick={onClose}
-          className="flex items-center gap-[16px] rounded-full bg-brand-dark py-[4px] pl-[4px] pr-[24px]"
+          className="flex items-center gap-4 rounded-full bg-brand-dark py-1 pl-1 pr-6"
         >
-          <span className="flex size-[48px] items-center justify-center rounded-[24px] bg-white">
-            <ArrowUpLeft className="size-[24px] rotate-90 text-brand-black" />
+          <span className="flex size-12 items-center justify-center rounded-full bg-white">
+            <ArrowUpRight className="size-6 text-brand-black" />
           </span>
           <span className="font-manrope text-[18px] font-semibold leading-[27px] text-white">
             {navigationConfig.ctaLabel}

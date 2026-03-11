@@ -3,15 +3,15 @@
 import { useState } from "react";
 import { navigationConfig } from "@/config/navigation";
 import { MobileMenu } from "./MobileMenu";
-import { ArrowUpLeft, Menu } from "lucide-react";
+import { Menu, ArrowUpRight } from "lucide-react";
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="relative z-50 flex items-center justify-between px-6 py-8 lg:px-[160px] lg:py-[38px]">
+    <nav className="relative z-50 mx-auto flex w-full max-w-[1440px] items-center justify-between px-6 py-6 md:px-10 lg:px-[160px] lg:py-[38px]">
       {/* Nav Links - Desktop */}
-      <ul className="hidden gap-[34px] font-poppins text-[16px] text-white md:flex">
+      <ul className="hidden items-center gap-[34px] font-poppins text-[16px] text-white lg:flex">
         {navigationConfig.links.map((link) => (
           <li key={link.label}>
             <a
@@ -26,7 +26,7 @@ export function Navbar() {
 
       {/* Mobile Hamburger */}
       <button
-        className="text-white md:hidden"
+        className="text-white lg:hidden"
         onClick={() => setIsMobileMenuOpen(true)}
         aria-label="Open menu"
       >
@@ -34,25 +34,22 @@ export function Navbar() {
       </button>
 
       {/* Logo */}
-      <span className="font-bebas text-[40px] leading-none text-white">
+      <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-bebas text-[32px] leading-none text-white md:text-[40px]">
         {navigationConfig.logo}
       </span>
 
-      {/* CTA Button - Desktop */}
+      {/* CTA Button */}
       <a
         href={navigationConfig.ctaHref}
-        className="hidden items-center gap-[16px] rounded-full bg-brand-dark py-[4px] pl-[4px] pr-[24px] md:flex"
+        className="flex items-center gap-4 rounded-full bg-brand-dark py-1 pl-1 pr-6"
       >
-        <span className="flex size-[48px] items-center justify-center rounded-[24px] bg-white">
-          <ArrowUpLeft className="size-[24px] rotate-90 text-brand-black" />
+        <span className="flex size-12 items-center justify-center rounded-full bg-white">
+          <ArrowUpRight className="size-6 text-brand-black" />
         </span>
-        <span className="font-manrope text-[18px] font-semibold leading-[27px] text-white">
+        <span className="hidden font-manrope text-[18px] font-semibold leading-[27px] text-white md:block">
           {navigationConfig.ctaLabel}
         </span>
       </a>
-
-      {/* Mobile placeholder for spacing */}
-      <div className="size-[28px] md:hidden" />
 
       {/* Mobile Menu */}
       <MobileMenu

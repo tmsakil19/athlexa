@@ -6,13 +6,10 @@ interface BenefitsContentProps {
 
 export function BenefitsContent({ benefits }: BenefitsContentProps) {
   return (
-    <div className="flex w-full flex-col gap-[16px] lg:w-[326px]">
+    <div className="flex w-full flex-col gap-4 lg:w-[326px]">
       {benefits.map((benefit) =>
         benefit.isHighlighted ? (
-          <div
-            key={benefit.label}
-            className="flex items-center gap-[8px]"
-          >
+          <div key={benefit.label} className="flex items-center gap-2">
             <div className="size-[10px] shrink-0 rounded-full bg-brand-primary" />
             <p className="font-bebas text-[28px] leading-none text-brand-primary sm:text-[32px] lg:text-[36px]">
               {benefit.label}
@@ -25,7 +22,7 @@ export function BenefitsContent({ benefits }: BenefitsContentProps) {
           >
             {benefit.label}
           </p>
-        )
+        ),
       )}
     </div>
   );
