@@ -14,9 +14,9 @@ export function BenefitsSection() {
       </div>
 
       {/* ===== Section Header ===== */}
-      <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+      <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:items-end">
         {/* Title with metallic gradient */}
-        <div className="flex flex-col justify-center" style={{ lineHeight: "0.84" }}>
+        <div className="flex flex-col justify-center text-center md:text-start " style={{ lineHeight: "0.84" }}>
           <p
             className="font-bebas text-[32px] uppercase sm:text-[48px] lg:text-[64px]"
             style={{
@@ -48,7 +48,7 @@ export function BenefitsSection() {
       </div>
 
       {/* ===== Benefits Content Row ===== */}
-      <div className="mt-10 flex flex-col gap-10 lg:mt-[80px] lg:flex-row lg:items-end lg:gap-[40px]">
+      <div className="mt-10 flex flex-col items-center gap-10 lg:mt-[80px] lg:flex-row lg:items-end lg:gap-[40px]">
         {/* Column 1: Benefits List */}
         <BenefitsContent benefits={benefitsConfig.benefits} />
 
@@ -60,11 +60,11 @@ export function BenefitsSection() {
 
         {/* Column 3: Description + Arrows */}
         <div className="flex flex-col gap-10 lg:w-[356px] lg:gap-[155px]">
-          <p className="font-inter text-[24px] leading-normal text-white sm:text-[28px] lg:text-[32px]">
+          <p className="font-inter text-center lg:text-start text-[24px] leading-normal text-white sm:text-[28px] lg:text-[32px]">
             {benefitsConfig.description}
           </p>
 
-          <div className="flex items-center gap-4 self-start lg:self-end">
+          <div className="flex items-center gap-4 self-end">
             <ArrowButton direction="left" variant="default" />
             <ArrowButton direction="right" variant="active" />
           </div>

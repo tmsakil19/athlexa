@@ -6,7 +6,7 @@ interface BenefitsContentProps {
 
 export function BenefitsContent({ benefits }: BenefitsContentProps) {
   return (
-    <div className="flex w-full flex-col gap-4 lg:w-[326px]">
+    <div className="flex w-full flex-col items-center lg:items-start gap-4 lg:w-[326px]">
       {benefits.map((benefit) =>
         benefit.isHighlighted ? (
           <div key={benefit.label} className="flex items-center gap-2">
