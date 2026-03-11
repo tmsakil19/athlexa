@@ -105,14 +105,10 @@
   --brand-gray: #242424;
 
   /* Gradient for metallic text */
-  --gradient-metallic: linear-gradient(
-    222deg,
-    rgba(255, 255, 255, 0.9) 19%,
-    rgba(153, 153, 153, 0.25) 38%,
-    rgba(255, 255, 255, 0.9) 55%,
-    rgba(153, 153, 153, 0.25) 74%,
-    rgba(255, 255, 255, 0.9) 90%
-  );
+
+    --gradient-metallic: linear-gradient(254deg, rgba(255, 255, 255, 0.90) 18.93%, rgba(153, 153, 153, 0.25) 37.87%, rgba(255, 255, 255, 0.90) 54.98%, rgba(153, 153, 153, 0.25) 73.71%, rgba(255, 255, 255, 0.90) 89.61%), linear-gradient(93deg, #FFF 2%, #999 27.65%, #FFF 50.83%, #999 76.19%, #FFF 97.74%);
+    
+  --gradient-metallic2: linear-gradient(254deg, rgba(255, 255, 255, 0.90) 18.93%, rgba(153, 153, 153, 0.25) 37.87%, rgba(255, 255, 255, 0.90) 54.98%, rgba(153, 153, 153, 0.25) 73.71%, rgba(255, 255, 255, 0.90) 89.61%), linear-gradient(93deg, #FFF 2%, #999 27.65%, #FFF 50.83%, #999 76.19%, #FFF 97.74%);
 }
 
 .dark {

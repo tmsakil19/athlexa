@@ -26,23 +26,27 @@ export function HeroSection() {
 
         {/* ========== HERO HEADING (top-left, over player) ========== */}
         <div className="relative z-10 px-6 pt-[100px] md:px-10 lg:px-[160px] lg:pt-[170px]">
+
           <h1
-            className="font-bebas text-[28px] leading-[1.1] sm:text-[32px] md:text-[36px]"
-            style={{
+            className="font-bebas text-[28px] leading-normal sm:text-[32px] md:text-[36px]"
+          >
+            <span className="block" style={{
               backgroundImage: "var(--gradient-metallic)",
               WebkitBackgroundClip: "text",
               backgroundClip: "text",
               color: "transparent",
-            }}
-          >
-            <span className="block">{heroConfig.headingLine1}</span>
-            <span className="block">
+            }}>{heroConfig.headingLine1}</span>
+
+
+            <span className="block" style={{
+              backgroundImage: "var(--gradient-metallic)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+            }}>
               {heroConfig.headingLine2}
             </span>
           </h1>
-
-          {/* Decorative orange-to-transparent line */}
-          {/* <div className="mt-4 h-[3px] w-[203px] bg-linear-to-r from-white to-transparent" /> */}
           <TextBottomBorderIcon />
         </div>
 
@@ -100,6 +104,6 @@ export function HeroSection() {
           </p>
         </div>
       </div>
-    </section>
+    </section >
   );
 }

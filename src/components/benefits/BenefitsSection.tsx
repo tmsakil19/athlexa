@@ -2,37 +2,15 @@ import { benefitsConfig } from "@/config/benefits";
 import { BenefitsContent } from "./BenefitsContent";
 import { BenefitsImage } from "./BenefitsImage";
 import { ArrowButton } from "@/components/ui/ArrowButton";
+import Image from "next/image";
 
 export function BenefitsSection() {
   return (
     <section className="relative bg-brand-black px-6 pb-20 pt-16 md:px-10 lg:px-[160px] lg:pb-[120px] lg:pt-[155px]">
       {/* Decorative basketball circle - right side */}
-      <div className="pointer-events-none absolute right-0 top-0 hidden h-[752px] w-[487px] opacity-20 lg:block">
-        <svg
-          viewBox="0 0 487 752"
-          fill="none"
-          className="h-full w-full"
-        >
-          <circle
-            cx="400"
-            cy="376"
-            r="350"
-            stroke="rgba(255,255,255,0.15)"
-            strokeWidth="2"
-          />
-          <path
-            d="M400 26 Q200 376 400 726"
-            stroke="rgba(255,255,255,0.15)"
-            strokeWidth="2"
-            fill="none"
-          />
-          <path
-            d="M50 200 Q400 376 50 552"
-            stroke="rgba(255,255,255,0.15)"
-            strokeWidth="2"
-            fill="none"
-          />
-        </svg>
+      <div className="pointer-events-none absolute right-0 -top-108 hidden size-full max-w-100 xl:max-w-110 2xl:max-w-131.5 lg:block">
+
+        <Image src={"/images/half-ball-bg.png"} alt="Half basketball background" fill className="object-contain" />
       </div>
 
       {/* ===== Section Header ===== */}
@@ -42,7 +20,7 @@ export function BenefitsSection() {
           <p
             className="font-bebas text-[32px] uppercase sm:text-[48px] lg:text-[64px]"
             style={{
-              backgroundImage: "var(--gradient-metallic)",
+              backgroundImage: "var(--gradient-metallic2)",
               WebkitBackgroundClip: "text",
               backgroundClip: "text",
               color: "transparent",
@@ -53,7 +31,7 @@ export function BenefitsSection() {
           <p
             className="font-bebas text-[48px] uppercase sm:text-[72px] lg:text-[105px]"
             style={{
-              backgroundImage: "var(--gradient-metallic)",
+              backgroundImage: "var(--gradient-metallic2)",
               WebkitBackgroundClip: "text",
               backgroundClip: "text",
               color: "transparent",
