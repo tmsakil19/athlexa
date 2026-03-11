@@ -45,11 +45,25 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Custom brand colors */
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-black: var(--brand-black);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-text: var(--brand-text);
+  --color-brand-bg: var(--brand-bg);
+
+  /* Custom font families */
+  --font-bebas: var(--font-bebas-neue);
+  --font-poppins: var(--font-poppins);
+  --font-staatliches: var(--font-staatliches);
+  --font-manrope: var(--font-manrope);
+  --font-inter: var(--font-inter);
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: #0c0c0c;
+  --foreground: #ffffff;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -80,6 +94,25 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Brand colors */
+  --brand-primary: #dc661e;
+  --brand-primary-hover: #f35d00;
+  --brand-black: #0c0c0c;
+  --brand-dark: #110f0f;
+  --brand-text: #5b5b5b;
+  --brand-bg: #f2f2f2;
+  --brand-gray: #242424;
+
+  /* Gradient for metallic text */
+  --gradient-metallic: linear-gradient(
+    222deg,
+    rgba(255, 255, 255, 0.9) 19%,
+    rgba(153, 153, 153, 0.25) 38%,
+    rgba(255, 255, 255, 0.9) 55%,
+    rgba(153, 153, 153, 0.25) 74%,
+    rgba(255, 255, 255, 0.9) 90%
+  );
 }
 
 .dark {
