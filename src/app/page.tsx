@@ -2,6 +2,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { HeroSection } from "@/components/hero/HeroSection";
 import { BenefitsSection } from "@/components/benefits/BenefitsSection";
+import { HeroBackground } from "@/components/hero/HeroBackground";
 
 export default function Home() {
   return (
@@ -11,9 +12,11 @@ export default function Home() {
         <div className="absolute left-0 right-0 top-0 z-50">
           <Navbar />
         </div>
+
         <HeroSection />
       </div>
 
+      <HeroBackground />
       {/* Benefits Section */}
       <BenefitsSection />
     </main>

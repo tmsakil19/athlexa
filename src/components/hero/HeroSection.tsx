@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { heroConfig } from "@/config/hero";
 import { HeroBackground } from "./HeroBackground";
-import { DominantTypography } from "./DominantTypography";
 
 export function HeroSection() {
   return (
@@ -85,8 +84,10 @@ export function HeroSection() {
         <div className="hidden lg:block lg:h-[468px]" />
 
         {/* ========== DOMINANT TYPOGRAPHY ========== */}
-        <div className="relative z-[6] -mt-[20px] sm:-mt-[40px] lg:mt-0">
-          <DominantTypography />
+        <div className="relative -z-0 -mt-[20px] sm:-mt-[40px] lg:mt-0 flex max-w-[1440px] items-center justify-center w-full">
+          <h1 className="bg-[url('/images/dominant-bg.png')] font-bebas text-[50px] sm:text-[100px] md:text-[150px] lg:text-[200px] xl:text-[250px] 2xl:text-[350px] bg-center bg-clip-text text-transparent inline-block leading-[0.85] tracking-wider font-black bg-size-[180%] bg-opacity-30">
+            DOMINANT
+          </h1>
         </div>
 
         {/* ========== MOBILE DESCRIPTION ========== */}
