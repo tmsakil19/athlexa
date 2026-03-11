@@ -23,7 +23,7 @@ export function ArrowButton({
       <div
         className={`absolute inset-0 rounded-full ${isActive
           ? "bg-white -translate-x-[2px]"
-          : "bg-[#4b3c33] translate-x-[2px]"
+          : "bg-[#DC661E26] translate-x-[2px]"
           }`}
       />
       {/* Main circle background */}
